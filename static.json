@@ -3,10 +3,12 @@
              "/*":{
                    "X-Author": "mdtokarev",
                    "Access-Control-Allow-Origin": "*"
+                   "Content-Type": "text/html; charset=utf-8"
                   }
             },
   "routes": {
-    "/assets/*": "/assets/",
+    "/login/*": "/login/",
+    "/sample/*": "/sample/",
     "/**": "index.html"
   }
 }
