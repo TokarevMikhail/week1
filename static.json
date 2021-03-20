@@ -8,6 +8,8 @@
             },
   "routes": {
     "/login/": "index.html",
-    "/sample/": "sample.html"
+    "/sample/": "function task(x) {
+  return x.toUpperCase();
+}"
   }
 }
