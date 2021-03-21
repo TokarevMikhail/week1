@@ -2,7 +2,7 @@
   "headers":{ 
              "/**":{
                    "X-Author": "mdtokarev",
-                   "Access-Control-Allow-Origin": "*",
+                   "Access-Control-Allow-Origin": "*"
                    },
              "/*/":{
                    "Content-Type": "text/plain; charset=utf-8"
@@ -10,9 +10,9 @@
             },
   "routes": {
             "/login/": "index.html",
-            "/sample/": "sample.html"
-            "/promise/": "index.html"
-            "/fetch/": "index.html"
-            "/*.html": "index.html",
+            "/sample/": "sample.html",
+            "/promise/": "index.html",
+            "/fetch/": "index.html",
+            "/*.html": "index.html"
             }
 }
