@@ -8,15 +8,19 @@
                    "Content-Type": "text/plain; charset=utf-8",
                    "Access-Control-Allow-Origin": "*"
                    },
-         "/fetch/":{
+       "/promise/":{
                    "Content-Type": "text/javascript; charset=utf-8"
+                   "Access-Control-Allow-Origin": "*"
+                   }
+         "/fetch/":{
+                   "Content-Type": "text/html; charset=utf-8"
+                   "Access-Control-Allow-Origin": "*"
                    }
             },
   "routes": {
-            "/login/": "index.html",
             "/sample/": "sample.html",
-            "/promise/": "index.html",
-            "/fetch/": "index.html",
-            "/*.html": "index.html"
+            "/promise/": "promise.html",
+            "/fetch/": "fetch.html",
+            "/**": "index.html"
             }
 }
