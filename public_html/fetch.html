@@ -6,11 +6,11 @@
         
         function task() {
                            x = document.querySelector('#inp');
-          fetch(x.value).then((response) => {y
- =response.text();
-     x.value =y;                                                       
-  });
-						 //  console.log(y)
+          fetch(x.value).	 
+          then((response) => {response.text(); })
+          .then((result) => {x.value = result;});
+   
+          //  console.log(y)
                          };
     
       </script>
