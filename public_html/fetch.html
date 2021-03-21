@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JS DOM</title><meta charset="utf-8">
-      <script type="text/javascript" defer>   
-        
-        function task() {
-                           x = document.querySelector('#inp');
-          fetch(x.value).	 
-          then((response) => {response.text(); })
-          .then((result) => {x.value = result;});
+    <title>Страница HTML5</title>
+    <meta charset="utf-8" />
+ 
    
-          //  console.log(y)
-                         };
-    
-      </script>
-      <script>
-        console.clear();  
-        //window.addEventListener('load', upp); 
-      </script> 
   </head>
   <body>
-    <article>
-      <input id ="inp" type="text">
-      <button id="bt">Щёлкни!</button>
-    </article>
-    <script>
-      // document.querySelectorAll('ul li')[1].style.color = 'blue';
-      document.querySelector('button').addEventListener('click', task);
-    </script> 
+    <input type="text" id="inp" />
+    <button id="bt">button</button>
+    
+      <script>
+  let el = document.getElementById("bt");
+
+el.addEventListener("click", get_data);
+
+let input_val = document.getElementById("inp");
+
+function get_data() {
+  const url = input_val.value;
+  fetch(url)
+    .then((response) => response.text())
+    .then((result) => (input_val.value = result));
+}
+</script>
   </body>
 </html>
